@@ -1,4 +1,4 @@
-// src/App.jsx
+import WheaterForecast from "./WeatherForecast.jsx";
 
 const App = () => {
 
@@ -41,7 +41,9 @@ const App = () => {
   ];
     
   return (
-    <h1>Hello world!</h1>
+    <>
+      <WheaterForecast />
+    </>
   );
 }
 
