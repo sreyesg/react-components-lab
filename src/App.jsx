@@ -42,7 +42,18 @@ const App = () => {
     
   return (
     <>
-      <WheaterForecast />
+      <h1>Local Wheater</h1>
+      <section>
+        {weatherForecasts.map((weather, index) => {
+          return <WheaterForecast 
+            key={index}
+            {...weather}
+
+          
+          />
+        
+        })}
+      </section>
     </>
   );
 }
