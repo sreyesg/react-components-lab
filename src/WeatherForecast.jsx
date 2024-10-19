@@ -1,11 +1,11 @@
 import './WeatherForecast.css'
-const WheaterForecast = () => {
+const WheaterForecast = ({day, img, imgAlt, conditions, time}) => {
     return (
         <div className="weather">
-            <h2>Day of The Week</h2>
-            {/* <img src="" alt="" /> */}
-            <p><span>Conditions: </span>current weather conditions</p>
-            <p><span>Time: </span> time of the day</p>
+            <h2>{day}</h2>
+            <img src={img} alt={imgAlt} />
+            <p><span>Conditions: </span> {conditions}</p>
+            <p><span>Time: </span> {time}</p>
         </div>    
     )
 }

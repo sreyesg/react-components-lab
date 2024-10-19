@@ -48,7 +48,6 @@ const App = () => {
           return <WheaterForecast 
             key={index}
             {...weather}
-
           
           />
         
