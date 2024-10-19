@@ -1,5 +1,6 @@
 import './WeatherForecast.css'
 import WeatherIcon from './WeatherIcon.jsx'
+import WeatherData from './WeatherData.jsx'
 
 const WheaterForecast = ({day, img, imgAlt, conditions, time}) => {
     return (
@@ -11,8 +12,12 @@ const WheaterForecast = ({day, img, imgAlt, conditions, time}) => {
                 imgAlt={imgAlt}
 
             />
-            <p><span>Conditions: </span> {conditions}</p>
-            <p><span>Time: </span> {time}</p>
+            <WeatherData 
+                conditions={conditions}
+                time={time}
+            />
+            {/* <p><span>Conditions: </span> {conditions}</p>
+            <p><span>Time: </span> {time}</p> */}
         </div>    
     )
 }
